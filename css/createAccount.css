@@ -1,0 +1,20 @@
+.textcenter {
+	text-align:center;
+}
+
+.ancho{
+    position: relative;
+    width: 400px;
+    border-color: #006633;
+}
+.ancho2{
+    position: relative;
+    width: 800px;
+    border-color: #006633;
+}
+.ancho3{
+    position: relative;
+    width: 1100px;
+    height: 100px;
+    border-color: #006633;
+}

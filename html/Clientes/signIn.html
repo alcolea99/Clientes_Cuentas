@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../css/signIn.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="../../jQuery/jquery.validate.js"></script>
+</head>
+
+<body>
+    <form id="basic-form" action="" method="post">
+        <table>
+            <tr>
+                <td class="textcenter"><label>Nombre</label></td>
+                <td class="textcenter"><label>User Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="ancho" id="name" name="name" placeholder="Joselito"></td>
+                <td><input type="text" class="ancho" id="userName" name="userName" placeholder="JoseElFuerte"></td>
+            </tr>
+            <tr>
+                <td class="textcenter"><label>Email</label></td>
+                <td class="textcenter"><label>Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="ancho" id="email" name="email" placeholder="example@gmail.com"></td>
+                <td><input type="text" class="ancho" id="pwd" name="pwd" placeholder="Max 20 digitos"></td>
+            </tr>
+            <tr>
+                <td class="textcenter"><label>Pais</label>
+                </td>
+                <td class="textcenter"><label>Ciudad</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="ancho" id="pais" name="pais" placeholder="España">
+                </td>
+                <td>
+                    <input type="text" class="ancho" id="ciudad" name="ciudad" placeholder="Barcelona">
+                </td>
+            </tr>
+            <tr>
+                <td class="textcenter"><label>Dirección</label></td>
+                <td class="textcenter"><label>Fecha Nacimiento</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="select">
+                        <option value="value1" selected>C/</option>
+                        <option value="value2">Plz.</option>
+                        <option value="value3">Av.</option>
+                        <option value="value3">Crt.</option>
+                    </select>
+                    <input type="text" class="anchoDirec" id="direccion" name="direccion" placeholder="Pau claris 34">
+                </td>
+                <td>
+                    <input type="date" class="ancho" id="fechaNacimiento" name="fechaNacimiento" placeholder="05/12/2005">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="" type="submit" id="submit" name="submit" value="Sign in" disabled>
+                </td>
+            </tr>
+        </table>
+    </body>
+</form>
+
+<header>
+    <script type="text/javascript" src="../../js/Clientes/clsConection.js"></script>
+    <script type="text/javascript" src="../../js/Clientes/signIn.js"></script>
+</header>
+
+</html>

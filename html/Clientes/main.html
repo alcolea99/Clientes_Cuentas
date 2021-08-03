@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="../../css/mainClientes.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="../../jQuery/jquery.validate.js"></script>
+</head>
+<body>
+    <div>
+        <img src="../../img/moto.png" id="moto" class="moto" hidden>
+        <h1 class="centro">SBK</h1>
+        <h4>Login</h4>
+        <label>Name:</label><input id="user" type="text"><br>
+        <label>Password:</label><input id="pwd" type="text"><br>
+        <button id="login">Identificarse</button><br>
+        <select id="page" disabled>
+            <option value="0">Login</option>
+            <option value="1" selected>Listar</option>
+        </select>
+        <a href="http://localhost/M06/Clientes%20y%20Cuentas/html/Cuentas/hall.html">
+            Ir a Cuentas
+        </a><br>
+        <a href="http://localhost/M06/Clientes%20y%20Cuentas/html/Clientes/altaUsuarios.html">
+            Crear Usuario
+        </a>
+    </div>
+    <br>
+    
+    <iframe id="left" style="height:600px; width:1200px;" src="listarClientes.html" hidden></iframe>
+    <iframe id="right" class="m-left" style="height:600px; width:1200px; " src="signIn.html" hidden></iframe>
+    <iframe id="modify" style="height:600px; width:1200px;" src="modify.html" hidden></iframe>
+</body>
+<script type="text/javascript" src="../../js/Clientes/clsConection.js"></script>
+<script type="text/javascript" src="../../js/Clientes/clsCookies.js"></script>
+<script type="text/javascript" src="../../js/Clientes/mainClientes.js"></script>
+</html>

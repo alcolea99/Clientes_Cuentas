@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../css/tableClientes.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="../../jQuery/jquery.validate.js"></script>
+</head>
+
+<body>
+    <h1>Lista de cuentas registradas</h1>
+    <h2>Como Mostrar</h2>
+    <table>
+        <tr>
+            <td><label>Cuentas por pagina: </label></td>
+            <td><input id="item" type="number" min=1 value="5"></td>
+        </tr>
+    </table>
+    <h2>Buscar cuentas</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>Buscar por TLD </td>
+                <td><select id="dominio">
+                        <option selected value=""></option>
+                        <option>.com</option>
+                        <option>.es</option>
+                        <option>.cat</option>
+                        <option>.org</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>Buscar por dinero</td>
+                <td>
+                    <select id="dinero">
+                        <option selected>0</option>
+                        <option>1000</option>
+                        <option>5000</option>
+                        <option>10000</option>
+                        <option>100000</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br></br>
+
+    <form id="form-cuentas" action="" method="post">
+        <p id="p"></p>
+    </form>
+
+    <input id="saveChanges" type="button" class="buttonSave" value="Guardar Cambios">
+
+    <ul id="lista" class="centro">
+        <input id=paginador name="paginador" class="boton" type="button" value="1">
+    </ul>
+</body>
+
+<header>
+    <script type="text/javascript" src="../../js/Clientes/clsConection.js"></script>
+    <script type="text/javascript" src="../../js/Clientes/clsCookies.js"></script>
+    <script type="text/javascript" src="../../js/Cuentas/listarCuentas.js"></script>
+</header>
+
+</html>

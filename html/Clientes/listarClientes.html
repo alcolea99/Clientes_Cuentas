@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../../css/tableClientes.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="../../jQuery/jquery.validate.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <h1>Lista de clientes registrados</h1>
+    <h2>Como Mostrar</h2>
+    <table>
+        <tr>
+            <td><label>Clientes por pagina: </label></td>
+            <td><input id="item" type="number" min=1 value="5"></td>
+        </tr>
+    </table>
+    <h2>Buscar clientes</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>Busca por pais</td>
+                <td><select id="selectpais">
+                        <option selected></option>
+                        <option>España</option>
+                        <option>Francia</option>
+                        <option>Portugal</option>
+                        <option>Italia</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>Buscar tipo email</td>
+                <td><select id="tipoemail">
+                        <option selected></option>
+                        <option>@hotmail.com</option>
+                        <option>@gmail.com</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br></br>
+
+    <form id="form-clientes" action="" method="post">
+        <p id="p"></p>
+    </form>
+
+    <input id="saveChanges" type="button" class="buttonSave" value="Guardar Cambios">
+
+    <ul id="lista" class="centro">
+        <input id=paginador name="paginador" class="boton" type="button" value="1">
+    </ul>
+</body>
+
+<header>
+    <script type="text/javascript" src="../../js/Clientes/clsConection.js"></script>
+    <script type="text/javascript" src="../../js/Clientes/clsCookies.js"></script>
+    <script type="text/javascript" src="../../js/Clientes/listarClientes.js"></script>
+</header>
+
+</html>

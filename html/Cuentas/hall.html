@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="../../css/mainCuentas.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../../jQuery/jQuery.js"></script>
+        <script type="text/javascript" src="../../jQuery/jquery.validate.js"></script>
+    </head>
+    <body>
+        <div>
+            <img src="../../img/pedobear.png" id="pedobear" class="pedobear" hidden>
+            <img src="../../img/child.png" id="child" class="child">
+            <br>
+            <h4>Login</h4>
+            <label>Name:</label><input id="user" type="text"><br>
+            <label>Password:</label><input id="pwd" type="text"><br>
+            <button id="login">Identificarse</button><br>
+        <select id="page" disabled>
+            <option value=""></option>
+            <option value="0">Registrar</option>
+            <option value="1" selected>Listar y modificar</option>
+        </select>
+        <a href="http://localhost/M06/Clientes%20y%20Cuentas/html/Clientes/altaUsuarios.html">
+            Crear Usuario
+        </a><br>
+        <a href="http://localhost/M06/Clientes%20y%20Cuentas/html/Clientes/main.html">
+            Ir a Clientes
+        </a>
+        </div>
+        <br>
+        
+        <iframe id="left" style="height:600px; width:1200px;" src="listAccount.html" hidden></iframe>
+        <iframe id="right" class="m-left" style="height:600px; width:1200px; " src="createAccount.html" hidden></iframe>
+        <iframe id="modifyCuenta" style="height:600px; width:1200px;" src="modifyAccount.html" hidden></iframe>
+    </body>
+    <script type="text/javascript" src="../../js/Clientes/clsConection.js"></script>
+    <script type="text/javascript" src="../../js/Clientes/clsCookies.js"></script>
+    <script type="text/javascript" src="../../js/Cuentas/mainCuentas.js"></script>
+</html>

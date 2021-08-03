@@ -1,0 +1,83 @@
+.textcenter {
+	text-align:center;
+}
+
+.ancho{
+    position: relative;
+    width: 400px;
+    border-color: #006633;
+}
+.ancho2{
+    position: relative;
+    width: 800px;
+    border-color: #006633;
+}
+.select{
+    width: 40px;
+    height: 25px;
+}
+.anchoDirec{
+    width: 350px;
+    position: relative;
+    border-color: #006633;
+}
+body {
+    margin: 20px 0;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1.25rem;
+    width: 300px;
+  }
+  
+  form, p {
+    margin: 20px;
+  }
+  
+  p.note {
+    font-size: 1rem;
+    color: red;
+  }
+  
+  input, textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: 'Lato';
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  label {
+    width: 300px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  label span {
+    font-size: 1rem;
+  }
+  
+  label.error {
+      color: red;
+      font-size: 1rem;
+      display: block;
+      margin-top: 5px;
+  }
+  
+  input.error, textarea.error {
+      border: 1px dashed red;
+      font-weight: 300;
+      color: red;
+  }
+  
+  [type="submit"], [type="reset"], button, html [type="button"] {
+      margin-left: 0;
+      border-radius: 0;
+      background: rgb(3, 175, 3);
+      color: white;
+      border: none;
+      font-weight: 300;
+      padding: 10px 0;
+      line-height: 1;
+  }

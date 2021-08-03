@@ -1,0 +1,21 @@
+.m-left{
+    left: 50px; 
+ }
+ 
+ body{
+     margin-left: 100px;
+     margin-right: 10px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+   }
+.pedobear{
+    position: relative;
+    left: 500px;
+    height: 200px; 
+    width: 200px;
+}
+.child{
+    position: relative;
+    height: 200px; 
+    width: 200px;
+}
